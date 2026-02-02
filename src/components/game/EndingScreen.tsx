@@ -6,6 +6,10 @@ interface EndingScreenProps {
 }
 
 const endingMessages: Record<string, { title: string; message: string }> = {
+  to_be_continued: {
+    title: 'To Be Continued',
+    message: '',
+  },
   good: {
     title: 'Good Ending',
     message: 'You found new friends and discovered the café\'s secret!',

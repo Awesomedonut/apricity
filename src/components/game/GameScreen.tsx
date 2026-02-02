@@ -5,7 +5,6 @@ import { Story } from '@/types/story';
 import { useGameState } from '@/hooks/useGameState';
 import { DialogueBox } from './DialogueBox';
 import { ChoiceMenu } from './ChoiceMenu';
-import { CharacterSprite } from './CharacterSprite';
 import { EndingScreen } from './EndingScreen';
 
 interface GameScreenProps {
@@ -57,26 +56,7 @@ export function GameScreen({ story }: GameScreenProps) {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${currentScene.background})`,
-          backgroundColor: '#1a1a2e',
-        }}
-      />
-
-      {/* Gradient overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-
-      {/* Characters */}
-      {currentScene.characters.map((char, index) => (
-        <CharacterSprite
-          key={`${char.characterId}-${index}`}
-          characterId={char.characterId}
-          position={char.position}
-          expression={char.expression}
-        />
-      ))}
+      <div className="absolute inset-0 bg-[#1a1a2e]" />
 
       {/* UI Layer */}
       {currentNode.type === 'dialogue' && (
