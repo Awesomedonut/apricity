@@ -1,7 +1,7 @@
 import { Story } from '@/types/story';
 
 export const story: Story = {
-  title: "Apricity",
+  title: "Cannon Fodder's Survival Guide",
   characters: {
     narrator: { id: 'narrator', name: '', color: '#ffffff' },
     daien: { id: 'daien', name: 'Daien', color: '#94a3b8' },

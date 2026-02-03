@@ -18,7 +18,7 @@ export default function Home() {
             Something is coming.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Interested? Click the button below and follow along for updates.
+            Click the button to help us measure interest! We're just estimating how many people are into this idea.
           </p>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium">
@@ -43,7 +43,7 @@ export default function Home() {
                 X / Twitter
               </a>
               <a
-                href="https://bsky.app/profile/jin-glebell.bsky.social"
+                href="https://bsky.app/profile/whyjs.bsky.social"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 items-center justify-center rounded-full border border-black/[.08] px-4 text-sm transition-colors hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
