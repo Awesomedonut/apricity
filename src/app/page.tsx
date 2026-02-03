@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { InterestButton } from "@/components/InterestButton";
 import sketchImg from "@/imgs/sketch2.jpg";
 
@@ -65,6 +66,21 @@ export default function Home() {
                       Bluesky
                     </a>
                   </div>
+                </div>
+
+                <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                  <Link
+                    href="/concept-art"
+                    className="text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 underline underline-offset-4"
+                  >
+                    Concept Art
+                  </Link>
+                  <Link
+                    href="/more-info"
+                    className="text-sm text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 underline underline-offset-4"
+                  >
+                    More Info
+                  </Link>
                 </div>
               </div>
             </div>
